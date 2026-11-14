@@ -6,5 +6,7 @@ export interface Customer {
   created_at: string;
 }
 
-export type CreateCustomerInput = Omit<Customer, "id" | "created_at">;
+export type CreateCustomerInput = Omit<Customer, "id" | "created_at" | "phone"> & {
+  phone?: string | null;
+};
 export type UpdateCustomerInput = Partial<CreateCustomerInput>;
