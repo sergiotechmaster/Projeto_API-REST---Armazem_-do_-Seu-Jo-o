@@ -1,0 +1,23 @@
+{
+  "name": "exemplo-api-2ads",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "db:init": "tsx src/database/init.ts",
+    "db:seed": "tsx src/database/seed.ts"
+  },
+  "dependencies": {
+    "express": "^4.22.3",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
